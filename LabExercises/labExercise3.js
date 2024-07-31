@@ -1,5 +1,5 @@
 function headingAndColorChange1() {
-    var textInputValue = document.getElementById("textbox_id").value
+    var inputValue = document.getElementById("textbox_id").value
 document.getElementById("heading1").innerText = inputValue
 document.getElementById("column1").style.backgroundColor =
 'red';
