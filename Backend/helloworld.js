@@ -27,13 +27,9 @@ function multiplyFunction(a, b) {
 }
 console.log(multiplyFunction(5, 2));
 
-//Task2
-let text1 = "Hello";
-let text2 = "Danni";
-
-function helloDanni(text1, text2) {
-    return text1.concat(text2);
+//Task 2
+function helloDanni(a, b) {
+    return a + b;
 }
 
-
-console.log(helloDanni);
+console.log("Hello", " Danni");
