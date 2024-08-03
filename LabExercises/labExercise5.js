@@ -16,8 +16,7 @@ catBreeds.unshift("Persian")
 console.log(catBreeds);
 
 // Remove the element at the end of the array
-catBreeds.shift();
+catBreeds.pop("British Shorthair");
 
 // Print the array to the console
-let catBreedsIndex = catBreeds.indexOf
-console.log(catBreedsIndex);
+console.log(catBreeds);
