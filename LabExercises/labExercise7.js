@@ -8,11 +8,11 @@ function testAdditionFunction() {
 
   //test with 0
   if (additionFunction(0, 0) != 0) {
-    throw Error("did not equal 6");
+    throw Error("did not equal 0");
   }
 
   //test with negative numbers
-  if (additionFunction(-5, 5) != 0) {
+  if (additionFunction(-5, 5    ) != 0) {
     throw Error("did not equal 6");
   }
 
@@ -30,17 +30,17 @@ testAdditionFunction();
 //Sum of subtracting 'b' value from 'a' value
 function testMinusFunction() {
   // test with typical values
-  if (testMinusFunction(5, 1) != 4) {
+  if (minusFunction(5, 1) != 4) {
     throw Error("did not equal 4");
   }
 
   //test with 0
-  if (testMinusFunction(5, 0) != 5) {
-    throw Error("did not equal 5");
+  if (minusFunction(5, 5) != 0) {
+    throw Error("did not equal 0");
   }
 
   //test with negative numbers
-  if (testMinusFunction(-5, 5) != -10) {
+  if (minusFunction(-5, 5) != -10) {
     throw Error("did not equal -10");
   }
   console.log("Tests Passed");
@@ -59,18 +59,18 @@ testMinusFunction();
 
 function testDivideFunction() {
   // test with typical values
-  if (testDivideFunction(5, 1) != 4) {
-    throw Error("did not equal 4");
-  }
-
-  //test with 0
-  if (testDivideFunction(5, 0) != 5) {
+  if (divideFunction(5, 1) != 5) {
     throw Error("did not equal 5");
   }
 
+  //test with big numbers
+  if (divideFunction(5, 1000) != 0.005) {
+    throw Error("did not equal 0.005");
+  }
+
   //test with negative numbers
-  if (testDivideFunction(-5, 5) != -10) {
-    throw Error("did not equal -10");
+  if (divideFunction(-5, 5) != -1) {
+    throw Error("did not equal -1");
   }
   console.log("Tests Passed");
 }
@@ -83,7 +83,30 @@ console.log(divideFunction(5, 1));
 testDivideFunction();
 
 //This function returns the sum of multiple a value by b value
+
+function testMultiplyFunction() {
+  // test with typical values
+  if (multiplyFunction(5, 1) != 5) {
+    throw Error("did not equal 5");
+  }
+
+  //test with 0
+  if (multiplyFunction(0, 5) != 0) {
+    throw Error("did not equal 0");
+  }
+
+  //test with large numbers
+  if (multiplyFunction(1000, 1000) != 1000000) {
+    throw Error("did not equal 1000000");
+  }
+  console.log("Tests Passed");
+}
+
+//Define the multiply function
 function multiplyFunction(a, b) {
   return a * b;
 }
 console.log(multiplyFunction(5, 2));
+
+//call the test function
+testMultiplyFunction();
