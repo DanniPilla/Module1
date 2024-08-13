@@ -1,3 +1,23 @@
+let book = 
+  {
+    title: "Behind the Seams: My Life in Rhinestones",
+    author: "Dolly Parton",
+    description:
+      "A beautifully illustrated celebration of Dolly Parton's iconic sense of style through entertaining personal stories and 450 full-color photographs, including exclusive images from her private costume archive.",
+    pages: "336",
+  };
+
+  console.log(book.title);         
+  console.log(book.description);   
+  console.log(book.author);        
+  console.log(book.pages); 
+  
+  console.log(book);
+
+  book.description = "Just a really, cool relaxed story about a cool cool lady";
+  console.log(book.description); 
+
+
 const books = [
   {
     title: "Tomie",
